@@ -1,8 +1,8 @@
 #include <Arduino.h>
 
 
-#define LED_PIN 13 // Define the LED pin
-#define TOUCH_PIN 2 // Define the touch pin
+#define LED_PIN 7 // Define the LED pin
+#define TOUCH_PIN 8 // Define the touch pin
 void setup() {
   pinMode(TOUCH_PIN, INPUT); // Set the touch pin as input
   pinMode(LED_PIN, OUTPUT); // Set the LED pin as output
