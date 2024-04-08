@@ -19,7 +19,7 @@ void loop() {
   } else {
     digitalWrite(ledPin, LOW);
   }
-  Serial.println(infraredData);
+//  Serial.println(infraredData);
   delay(1000);
 }
 
