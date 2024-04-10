@@ -1,7 +1,6 @@
 #include <Arduino.h>
 //红外传感器示例
-// put function declarations here:
-int myFunction(int, int);
+
 int infraredPin = 7;
 int ledPin = 8;
 
