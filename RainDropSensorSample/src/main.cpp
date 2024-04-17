@@ -1,6 +1,6 @@
 #include <Arduino.h>
-const int rainDropSensorDigitalPin = 8; //0和1
-const int rainDropSensorAnalogPin = A0; //雨越大，值越小
+const int rainDropSensorDigitalPin = 2; //0和1
+const int rainDropSensorAnalogPin = A2; //雨越大，值越小
 const int ledPin = 7;
 
 void setup() {
@@ -21,7 +21,7 @@ void loop() {
     Serial.println("Rain detected!"); // Print message to serial monitor
   } else {
     digitalWrite(ledPin, LOW);
-    Serial.println("Rain detected."); // Print message to serial monitor
+    Serial.println("Rain not detected."); // Print message to serial monitor
   }
 
   delay(1000);

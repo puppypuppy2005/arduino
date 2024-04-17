@@ -3,9 +3,10 @@
  
 #include <Blinker.h>
  
-char auth[] = "Your Device Secret Key";
-char ssid[] = "Your WiFi network SSID or name";
-char pswd[] = "Your WiFi network WPA password or WEP key";
+char auth[] = "20feb71e9ab2";
+//char ssid[] = "8-403";
+char ssid[] = "happytonny";
+char pswd[] = "1234567890";
  
 // 新建组件对象
 BlinkerButton Button1("btn-abc");
@@ -15,8 +16,10 @@ int counter = 0;
  
 // 按下按键即会执行该函数
 void button1_callback(const String & state) {
+   // Serial.println("Button pressed");
     BLINKER_LOG("get button state: ", state);
     digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
+    
 }
  
 // 如果未绑定的组件被触发，则会执行其中内容
